@@ -17,4 +17,6 @@ function getThemeIcon() {
         });
 }
 
+document.getElementById("theme-icon").addEventListener('click', toggleTheme)
+
 getThemeIcon();
