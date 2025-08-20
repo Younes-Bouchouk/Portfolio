@@ -9,7 +9,7 @@ function toggleTheme(){
 
 // Fonction pour récupérer l'icon du bouton thème
 function getThemeIcon() {
-    const icon = darkTheme ? "../icons/sun.svg" : "../icons/moon.svg";
+    const icon = darkTheme ? "./icons/sun.svg" : "./icons/moon.svg";
     fetch(icon)
         .then(res => res.text())
         .then(html => {
