@@ -3,13 +3,14 @@
 :root {
     --background: #141414;
     --foreground: #ffffff;
-    --primary: #22f156;
+    --text: #cccccc;
+    --primary: #adff2f;
 }
 
 .light-theme {
     --background: #ffffff;
     --foreground: #141414;
-    --primary: #22f156;
+    --primary: #adff2f;
 }
 
 body {
@@ -63,6 +64,11 @@ header {
     display: flex;
     align-items: center;
     gap: 50px
+}
+
+#header-list > nav > ul :hover {
+    color: var(--primary);
+    transition: color 0.4s ease;
 }
 
 #theme-icon {

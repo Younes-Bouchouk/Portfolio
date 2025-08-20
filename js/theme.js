@@ -9,14 +9,14 @@ function toggleTheme(){
 
 // Fonction pour récupérer l'icon du bouton thème
 function getThemeIcon() {
-    const icon = darkTheme ? "./icons/sun.svg" : "./icons/moon.svg";
-    fetch(icon)
-        .then(res => res.text())
-        .then(html => {
-        document.getElementById("theme-icon").innerHTML = html;
-        });
+    const icon = darkTheme 
+        ? "<span class='material-symbols-outlined'>light_mode</span>" 
+        : "<span class='material-symbols-outlined'>dark_mode</span>"
+
+    document.getElementById("theme-icon").innerHTML = icon;
 }
 
 document.getElementById("theme-icon").addEventListener('click', toggleTheme)
 
+// Initialiser de l'icône au chargement
 getThemeIcon();
