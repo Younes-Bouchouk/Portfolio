@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap');
+
+:root {
+    --background: #141414;
+    --foreground: #ffffff;
+    --primary: #22f156;
+}
+
+.light-theme {
+    --background: #ffffff;
+    --foreground: #141414;
+    --primary: #22f156;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    background-color: var(--background);
+    font-family: "Cairo", sans-serif;
+    transition: background 0.5s ease;
+}
+
+/* Supprimer le style par défaut de certains éléments */
+a, li, button {
+    all: unset;
+}
+
+a, button {
+    cursor: pointer;
+}
+
+/* - - - - - - - - - - - - - - - - - - - - */
+
+header {
+    height: 80px;
+    color: var(--foreground);
+    display: flex;
+    justify-content: center;
+    padding: 0 20px;
+}
+
+#header-container {
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#header-container > a {
+    font-weight: bold;
+}
+
+#header-list {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+#header-list > nav > ul {
+    display: flex;
+    align-items: center;
+    gap: 50px
+}
+
+#theme-icon {
+    display: flex;
+    align-items: center;
+    color: var(--foreground)
+}
+
