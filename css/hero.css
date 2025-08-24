@@ -1,0 +1,49 @@
+#hero {
+    display: flex;
+}
+
+#hero-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+#hero-left-side {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+#hero-title {
+    color: var(--text-primary);
+    font-size: 60px;
+    line-height: 5rem;
+}
+
+#hero-title > span {
+    color: var(--primary-light);
+}
+
+#hero-description > strong {
+    font-weight: bolder;
+}
+
+#hero-description {
+    color: var(--text-secondary);
+    font-size: 20px;
+    /* letter-spacing: 0.1rem; */
+}
+
+#hero-buttons-list {
+    display: flex;
+    gap: 1rem;
+}
+
+#hero-right-side {
+    
+}
+
+#hero-logo {
+    width: 250px;
+    filter: drop-shadow(0 4px 100px white);
+}
