@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="global.css">
-    <link rel="stylesheet" href="/css/header.css">
-    <link rel="stylesheet" href="/css/hero.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/hero.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
 
@@ -28,18 +28,18 @@
 
     <script>
         // Importer le haut de page
-        fetch("/partials/header.html")
+        fetch("./partials/header.html")
             .then(res => res.text())
             .then(html => {
                 document.getElementById("header").innerHTML = html;
                 // Charger le script theme.js après l'injection
                 const script = document.createElement("script");
-                script.src = "/js/theme.js";
+                script.src = "./js/theme.js";
                 document.body.appendChild(script);
             })
 
         // Importer la section "hero"
-        fetch("/partials/hero.html")
+        fetch("./partials/hero.html")
             .then(res => res.text())
             .then(html => {
                 document.getElementById("hero").innerHTML = html;
