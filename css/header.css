@@ -19,7 +19,7 @@
 
 #header-container:hover {
     background-color: var(--foreground-light-transparent);
-    /* border: 1px solid var(--border-light); */
+    border: 1px solid var(--border-light);
 }
 
 #logo {
@@ -27,6 +27,7 @@
     font-size: 1.2rem;
     color: var(--text-primary);
     transition: color 0.3s ease;
+    padding-left: 1rem;
 }
 
 #logo:hover {
@@ -38,8 +39,6 @@
     display: flex;
     align-items: center;
     gap: 50px;
-    font-size: 1rem;
-    font-weight: 500;
 }
 
 #header-list > nav > ul {
@@ -54,7 +53,9 @@
 }
 
 #header-list > nav > ul > li {
-    padding: 0.5rem 1rem;
+    font-size: 1.1rem;
+    font-weight: 500;
+    padding: 0 1rem;
     border: 1px solid transparent;
     border-radius: 0.4rem;
     color: var(--text-secondary);
@@ -62,9 +63,8 @@
 }
 
 #header-list > nav > ul > li:hover {
-    /* border: 1px solid var(--border); */
-    /* background-color: var(--foreground-light); */
-    color: var(--text-primary);
+    /* color: var(--text-primary); */
+    color: var(--primary-light);
 }
 
 #theme-icon {

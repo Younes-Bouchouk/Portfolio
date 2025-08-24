@@ -10,7 +10,6 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
 
     <title>Younès - Portfolio</title>
-    <script src="./js/theme.js" defer></script>
 </head>
 <body id="page">
 
@@ -23,8 +22,7 @@
         <section id="hero">
 
         </section>
-                <section id="hero">
-
+        <section id="hero">
         </section>
     </main>
 
@@ -34,6 +32,10 @@
             .then(res => res.text())
             .then(html => {
                 document.getElementById("header").innerHTML = html;
+                // Charger le script theme.js après l'injection
+                const script = document.createElement("script");
+                script.src = "/js/theme.js";
+                document.body.appendChild(script);
             })
 
         // Importer la section "hero"
